@@ -57,6 +57,12 @@ const StrategicCase = () => {
           })}
         </div>
 
+        <div className="text-center p-8 rounded-lg bg-accent/10 border border-accent/20 mb-16">
+          <p className="text-2xl text-foreground font-semibold">
+            Your DAF gift creates change where it's needed most.
+          </p>
+        </div>
+
         {/* IMA Solutions Section */}
         <div className="space-y-12 mb-12">
           {/* Cancer Solutions */}
@@ -135,12 +141,6 @@ const StrategicCase = () => {
               </div>
             </div>
           </Card>
-        </div>
-        
-        <div className="text-center p-8 rounded-lg bg-accent/10 border border-accent/20">
-          <p className="text-2xl text-foreground font-semibold">
-            Your DAF gift creates change where it's needed most.
-          </p>
         </div>
       </div>
     </section>
