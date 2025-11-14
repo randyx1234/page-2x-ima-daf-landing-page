@@ -29,7 +29,7 @@ const StrategicCase = () => {
   ];
 
   return (
-    <section className="pt-20 pb-8 bg-gradient-to-b from-background to-muted">
+    <section className="pt-20 pb-0 bg-gradient-to-b from-background to-muted">
       <div className="container px-6 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-4 animate-fade-in">
           Your Gift Helps Fix What's Broken in American Healthcare
