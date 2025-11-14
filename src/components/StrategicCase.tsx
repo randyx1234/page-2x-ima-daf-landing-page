@@ -1,5 +1,7 @@
-import { AlertCircle, Ban, MessageSquareOff, TrendingUp, Stethoscope } from "lucide-react";
+import { AlertCircle, Ban, MessageSquareOff, TrendingUp, Stethoscope, Heart, Network } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import medicalTeam from "@/assets/medical-team.png";
 
 const StrategicCase = () => {
   const points = [
@@ -34,7 +36,7 @@ const StrategicCase = () => {
         
         <div className="h-1 w-24 bg-accent mx-auto mb-16 rounded-full"></div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {points.map((point, index) => {
             const Icon = point.icon;
             return (
@@ -52,6 +54,79 @@ const StrategicCase = () => {
               </Card>
             );
           })}
+        </div>
+
+        {/* IMA Solutions Section */}
+        <div className="space-y-12 mb-12">
+          {/* Cancer Solutions */}
+          <Card className="overflow-hidden border-2 border-primary/20 hover:shadow-elevated transition-all duration-300">
+            <div className="grid md:grid-cols-2 gap-8 p-8">
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Heart className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-3xl font-bold text-foreground">Cancer Solutions</h3>
+                </div>
+                <p className="text-lg text-muted-foreground font-medium">
+                  Redefining Cancer Care Through Prevention and Education
+                </p>
+                <div className="space-y-3">
+                  <p className="text-base text-foreground">IMA's Cancer Care initiative includes:</p>
+                  <ul className="space-y-2 text-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Clinician-developed treatment guides and patient education series</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>Six-part Cancer Care program supported by a $250,000 match campaign</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>A focus on nutrition, metabolic health, and whole-body care</span>
+                    </li>
+                  </ul>
+                </div>
+                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground mt-4">
+                  Fund Cancer Solutions
+                </Button>
+              </div>
+              <div className="flex items-center justify-center">
+                <img 
+                  src={medicalTeam} 
+                  alt="Medical team collaborating on cancer care research" 
+                  className="rounded-lg shadow-card w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </Card>
+
+          {/* Trusted Network */}
+          <Card className="overflow-hidden border-2 border-accent/20 hover:shadow-elevated transition-all duration-300">
+            <div className="p-8">
+              <div className="max-w-3xl mx-auto text-center space-y-6">
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
+                    <Network className="w-6 h-6 text-accent" />
+                  </div>
+                  <h3 className="text-3xl font-bold text-foreground">Trusted Referral Network</h3>
+                </div>
+                <p className="text-xl text-foreground font-medium">
+                  Connecting patients with doctors who still listen.
+                </p>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  IMA's Trusted Referral Network links patients to independent physicians who practice Honest Medicine™ across the U.S.
+                </p>
+                <p className="text-base text-foreground">
+                  Every DAF gift helps us expand this life-changing resource — one that puts the patient back at the center of care.
+                </p>
+                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground mt-4">
+                  Help Build the Network
+                </Button>
+              </div>
+            </div>
+          </Card>
         </div>
         
         <div className="text-center p-8 rounded-lg bg-accent/10 border border-accent/20">
