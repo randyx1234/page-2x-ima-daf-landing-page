@@ -69,7 +69,7 @@ const StrategicCase = () => {
                   </div>
                   <h3 className="text-3xl font-bold text-foreground">Cancer Solutions</h3>
                 </div>
-                <p className="text-lg text-muted-foreground font-medium">
+                <p className="text-xl text-foreground font-bold">
                   Redefining Cancer Care Through Prevention and Education
                 </p>
                 <div className="space-y-3">
@@ -89,7 +89,7 @@ const StrategicCase = () => {
                     </li>
                   </ul>
                 </div>
-                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground mt-4">
+                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground mt-4">
                   Fund Cancer Solutions
                 </Button>
               </div>
@@ -115,12 +115,12 @@ const StrategicCase = () => {
               </div>
               <div className="space-y-6 order-1 md:order-2">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <Network className="w-6 h-6 text-accent" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Network className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-3xl font-bold text-foreground">Trusted Referral Network</h3>
                 </div>
-                <p className="text-xl text-foreground font-medium">
+                <p className="text-xl text-foreground font-bold">
                   Connecting patients with doctors who still listen.
                 </p>
                 <p className="text-base text-muted-foreground leading-relaxed">
