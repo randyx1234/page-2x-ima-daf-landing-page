@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import WakeUpCall from "@/components/WakeUpCall";
 import ProgramsSection from "@/components/ProgramsSection";
@@ -12,6 +13,7 @@ import FinalCTA from "@/components/FinalCTA";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Navbar />
       <Hero />
       <WakeUpCall />
       <ProgramsSection />
