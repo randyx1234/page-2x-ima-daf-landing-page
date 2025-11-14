@@ -9,6 +9,7 @@ import StrategicCase from "@/components/StrategicCase";
 import CredibilitySection from "@/components/CredibilitySection";
 import GivingLevels from "@/components/GivingLevels";
 import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <CredibilitySection />
       <GivingLevels />
       <FinalCTA />
+      <Footer />
     </div>
   );
 };
