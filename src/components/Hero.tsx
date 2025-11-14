@@ -15,7 +15,7 @@ const Hero = () => {
       
       <div className="container relative z-10 px-6 py-20 text-center text-white">
         <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl max-w-5xl mx-auto animate-fade-in">
-          Support Honest Medicine<sup className="text-xl font-normal">™</sup> Through Your Donor-Advised Fund
+          Support Honest Medicine<sup className="text-xl font-normal -top-3 relative">™</sup> Through Your Donor-Advised Fund
         </h1>
         
         <p className="mb-10 text-xl md:text-2xl text-white/90 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
