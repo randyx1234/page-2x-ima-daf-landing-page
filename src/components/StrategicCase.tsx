@@ -64,7 +64,7 @@ const StrategicCase = () => {
         </div>
 
         {/* IMA Solutions Section */}
-        <div className="space-y-12 mb-12">
+        <div className="space-y-12">
           {/* Cancer Solutions */}
           <Card className="overflow-hidden border-2 border-primary/20 hover:shadow-elevated transition-all duration-300">
             <div className="grid md:grid-cols-2 gap-8 p-8">
