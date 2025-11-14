@@ -130,7 +130,7 @@ const StrategicCase = () => {
                   Connecting patients with doctors who still listen.
                 </p>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  IMA's Trusted Referral Network links patients to independent physicians who practice Honest Medicine<sup className="text-xs">™</sup> across the U.S.
+                  IMA's Trusted Referral Network links patients to independent physicians who practice Honest Medicine™ across the U.S.
                 </p>
                 <p className="text-base text-foreground">
                   Every DAF gift helps us expand this life-changing resource — one that puts the patient back at the center of care.
