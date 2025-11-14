@@ -2,6 +2,7 @@ import { AlertCircle, Ban, MessageSquareOff, TrendingUp, Stethoscope, Heart, Net
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import medicalTeam from "@/assets/medical-team.png";
+import networkMap from "@/assets/network-map.png";
 
 const StrategicCase = () => {
   const points = [
@@ -104,9 +105,16 @@ const StrategicCase = () => {
 
           {/* Trusted Network */}
           <Card className="overflow-hidden border-2 border-accent/20 hover:shadow-elevated transition-all duration-300">
-            <div className="p-8">
-              <div className="max-w-3xl mx-auto text-center space-y-6">
-                <div className="flex items-center justify-center gap-3">
+            <div className="grid md:grid-cols-2 gap-8 p-8">
+              <div className="flex items-center justify-center order-2 md:order-1">
+                <img 
+                  src={networkMap} 
+                  alt="Map of trusted referral network across the United States" 
+                  className="rounded-lg w-full h-full object-contain"
+                />
+              </div>
+              <div className="space-y-6 order-1 md:order-2">
+                <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
                     <Network className="w-6 h-6 text-accent" />
                   </div>
