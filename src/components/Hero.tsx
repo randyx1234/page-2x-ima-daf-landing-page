@@ -18,7 +18,7 @@ const Hero = () => {
           Support Honest Medicine<sup className="text-lg font-normal relative -top-6 ml-0.5">™</sup> Through Your Donor-Advised Fund
         </h1>
         
-        <p className="mb-10 text-xl md:text-2xl text-white/90 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <p className="mb-10 text-2xl md:text-3xl text-white/90 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
           Your DAF gift protects independent physicians, funds evidence-based research, and restores patient-first healthcare in America.
         </p>
         
