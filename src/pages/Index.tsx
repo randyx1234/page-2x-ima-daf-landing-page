@@ -1,12 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Hero from "@/components/Hero";
+import WakeUpCall from "@/components/WakeUpCall";
+import ProgramsSection from "@/components/ProgramsSection";
+import WhyDAF from "@/components/WhyDAF";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import HowToGive from "@/components/HowToGive";
+import StrategicCase from "@/components/StrategicCase";
+import CredibilitySection from "@/components/CredibilitySection";
+import GivingLevels from "@/components/GivingLevels";
+import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Hero />
+      <WakeUpCall />
+      <ProgramsSection />
+      <WhyDAF />
+      <TestimonialsSection />
+      <HowToGive />
+      <StrategicCase />
+      <CredibilitySection />
+      <GivingLevels />
+      <FinalCTA />
     </div>
   );
 };
