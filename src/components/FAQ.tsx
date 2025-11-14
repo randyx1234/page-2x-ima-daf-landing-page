@@ -8,10 +8,6 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "What is a Donor-Advised Fund (DAF)?",
-      answer: "A Donor-Advised Fund is a charitable giving account that allows you to make tax-deductible donations, invest those funds for tax-free growth, and recommend grants to qualified nonprofits like the Independent Medical Alliance over time."
-    },
-    {
       question: "How do I give through my DAF?",
       answer: "Simply log into your DAF provider's portal (such as Fidelity Charitable, Schwab Charitable, or Vanguard Charitable), search for Independent Medical Alliance by name or EIN, and recommend a grant amount. The process typically takes just a few minutes."
     },
