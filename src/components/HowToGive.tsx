@@ -15,74 +15,66 @@ const HowToGive = () => {
     <section className="py-20 bg-muted">
       <div className="container px-6 max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-16">
-          A Few Things to Know
+          Give in Three Simple Steps
         </h2>
         
-        <div className="space-y-8 mb-12">
-          {/* Key Points */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="p-6 bg-card shadow-card">
-              <h3 className="text-xl font-bold text-foreground mb-3">
-                Flexible Giving
-              </h3>
-              <p className="text-muted-foreground">
-                You can use your DAF to make a one-time or a recurring gift.
-              </p>
-            </Card>
-            
-            <Card className="p-6 bg-card shadow-card">
-              <h3 className="text-xl font-bold text-foreground mb-3">
-                Tax Benefits
-              </h3>
-              <p className="text-muted-foreground">
-                You will receive an acknowledgment for your gift, but not a charitable receipt for tax purposes. This is because it is your contribution to your donor-advised fund that is tax-deductible, not your distribution to Independent Medical Alliance, Inc.
-              </p>
-            </Card>
-            
-            <Card className="p-6 bg-card shadow-card">
-              <h3 className="text-xl font-bold text-foreground mb-3">
-                Anonymous Option
-              </h3>
-              <p className="text-muted-foreground">
-                You can give anonymously to Independent Medical Alliance via your DAF.
-              </p>
-            </Card>
-          </div>
-
-          {/* DAF Institutions */}
+        <div className="space-y-6 mb-12">
+          {/* Step 1 */}
           <Card className="p-8 bg-card shadow-card">
-            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
-              A Few Institutions Providing DAF's
-            </h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              {dafInstitutions.map((institution, index) => (
-                <div key={index} className="flex justify-between items-center p-4 bg-muted rounded-lg">
-                  <span className="font-semibold text-foreground">{institution.name}</span>
-                  <span className="text-muted-foreground">{institution.phone}</span>
+            <div className="flex items-start gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center">
+                  <span className="text-3xl font-bold text-primary-foreground">1</span>
                 </div>
-              ))}
+              </div>
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  Recommend a grant
+                </h3>
+                <p className="text-lg text-muted-foreground">
+                  Recommend a grant through your DAF provider: Fidelity, Schwab, Vanguard, or others.
+                </p>
+              </div>
             </div>
           </Card>
 
-          {/* How to Recommend */}
-          <Card className="p-8 bg-card shadow-card border-2 border-primary/20">
-            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
-              How to Recommend a DAF Gift
-            </h3>
-            <div className="space-y-4 max-w-3xl mx-auto">
-              <p className="text-lg text-muted-foreground text-center mb-6">
-                Contact your DAF sponsor to request a grant distribution to Independent Medical Alliance, Inc.
-              </p>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-4 bg-muted rounded-lg">
-                  <p className="text-sm text-muted-foreground mb-1">EIN</p>
-                  <p className="text-xl font-bold text-foreground">85-2270146</p>
+          {/* Step 2 */}
+          <Card className="p-8 bg-card shadow-card">
+            <div className="flex items-start gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center">
+                  <span className="text-3xl font-bold text-primary-foreground">2</span>
                 </div>
-                <div className="p-4 bg-muted rounded-lg">
-                  <p className="text-sm text-muted-foreground mb-1">Mailing Address</p>
-                  <p className="font-semibold text-foreground">2001 L Street NW, Suite 500</p>
-                  <p className="font-semibold text-foreground">Washington, DC 20036</p>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-foreground mb-6">
+                  Use this information
+                </h3>
+                <div className="p-6 bg-muted rounded-lg space-y-2">
+                  <p className="text-foreground font-semibold">Independent Medical Alliance</p>
+                  <p className="text-foreground">EIN: 85-2270146</p>
+                  <p className="text-foreground">Address: 2001 L Street NW, Suite 500 Washington, DC 20036</p>
+                  <p className="text-foreground">Purpose: Support for Independent Medical Alliance mission</p>
                 </div>
+              </div>
+            </div>
+          </Card>
+
+          {/* Step 3 */}
+          <Card className="p-8 bg-card shadow-card">
+            <div className="flex items-start gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center">
+                  <span className="text-3xl font-bold text-primary-foreground">3</span>
+                </div>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  Notify IMA
+                </h3>
+                <p className="text-lg text-muted-foreground">
+                  Notify IMA so we can confirm and designate your gift.
+                </p>
               </div>
             </div>
           </Card>
