@@ -16,7 +16,7 @@ const CredibilitySection = () => {
     {
       icon: BookOpen,
       title: "Published Research",
-      description: "Peer-reviewed studies and treatment protocols"
+      description: "Peer-reviewed studies and treatment guides"
     },
     {
       icon: Handshake,
