@@ -21,7 +21,7 @@ const WakeUpCall = () => {
       <div className="container px-6">
         <div className="max-w-4xl mx-auto text-center mb-16 space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            When Medicine Stopped Listening, We Stepped Up
+            When Medicine Stopped Listening,<br />We Stepped Up
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Medicine didn't fail overnight. Research was censored. Doctors were punished for speaking truth. Trust collapsed to historic lows. Patients were left without real choice or informed consent.

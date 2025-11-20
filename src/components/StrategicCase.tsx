@@ -32,7 +32,7 @@ const StrategicCase = () => {
     <section className="pt-20 pb-0 bg-gradient-to-b from-background to-muted">
       <div className="container px-6 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-4 animate-fade-in">
-          Your Gift Helps Fix What's Broken in American Healthcare
+          Your Gift Helps Fix What's Broken<br />in American Healthcare
         </h2>
         
         <div className="h-1 w-24 bg-accent mx-auto mb-16 rounded-full"></div>

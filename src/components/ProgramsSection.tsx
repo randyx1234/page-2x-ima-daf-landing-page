@@ -35,7 +35,7 @@ const ProgramsSection = () => {
     <section className="py-20 bg-background">
       <div className="container px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-16">
-          Your Gift Powers the Work Traditional Healthcare Refuses to Fund
+          Your Gift Powers the Work Traditional<br />Healthcare Refuses to Fund
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
