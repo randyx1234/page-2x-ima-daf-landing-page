@@ -26,7 +26,7 @@ const Hero = () => {
           <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 shadow-elevated">
             Give Through Your DAF
           </Button>
-          <Button size="lg" variant="ghost" className="border-2 border-white text-white hover:bg-white/20 text-lg px-8 py-6">
+          <Button size="lg" variant="ghost" className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6">
             Learn How DAF Giving Works
           </Button>
         </div>
