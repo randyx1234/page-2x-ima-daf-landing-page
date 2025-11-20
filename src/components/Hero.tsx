@@ -19,7 +19,7 @@ const Hero = () => {
         </h1>
         
         <p className="mb-10 text-2xl md:text-3xl text-white/90 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Your DAF gift protects independent physicians, funds evidence-based research, and restores patient-first healthcare in America.
+          Your DAF gift empowers independent physicians and restores patient-first healthcare in America.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
