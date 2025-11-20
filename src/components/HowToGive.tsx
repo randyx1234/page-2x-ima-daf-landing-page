@@ -29,10 +29,10 @@ const HowToGive = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-foreground mb-3">
-                  Recommend a grant
+                  Log into your DAF portal
                 </h3>
                 <p className="text-lg text-muted-foreground">
-                  Recommend a grant through your DAF provider: Fidelity, Schwab, Vanguard, or others.
+                  Access your donor-advised fund account through your provider's website.
                 </p>
               </div>
             </div>
@@ -47,15 +47,12 @@ const HowToGive = () => {
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-foreground mb-6">
-                  Use this information
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  Search "Independent Medical Alliance"
                 </h3>
-                <div className="p-6 bg-muted rounded-lg space-y-2">
-                  <p className="text-foreground font-semibold">Independent Medical Alliance</p>
-                  <p className="text-foreground">EIN: 85-2270146</p>
-                  <p className="text-foreground">Address: 2001 L Street NW, Suite 500 Washington, DC 20036</p>
-                  <p className="text-foreground">Purpose: Support for Independent Medical Alliance mission</p>
-                </div>
+                <p className="text-lg text-muted-foreground">
+                  Use the search function to find Independent Medical Alliance as your grant recipient.
+                </p>
               </div>
             </div>
           </Card>
@@ -70,20 +67,14 @@ const HowToGive = () => {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-foreground mb-3">
-                  Notify IMA
+                  Submit your grant
                 </h3>
                 <p className="text-lg text-muted-foreground">
-                  Notify IMA so we can confirm and designate your gift.
+                  Complete and submit your grant recommendation to Independent Medical Alliance.
                 </p>
               </div>
             </div>
           </Card>
-        </div>
-        
-        <div className="text-center">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
-            Give Through Your DAF
-          </Button>
         </div>
       </div>
     </section>
