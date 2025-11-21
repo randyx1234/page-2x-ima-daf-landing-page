@@ -46,9 +46,9 @@ const MajorGiftForm = () => {
         firstName: formData.firstName,
         lastName: formData.lastName,
         emailAddress: formData.email,
-        phone: formData.phone,
-        state: formData.state,
-        message: formData.message
+        phoneNumber: formData.phone,
+        addressState: formData.state,
+        description: formData.message
       };
 
       const response = await fetch("https://espocrm.theflccc.org/api/v1/LeadCapture/01c8a47a0773cb50e73bdaa59d22c646", {
