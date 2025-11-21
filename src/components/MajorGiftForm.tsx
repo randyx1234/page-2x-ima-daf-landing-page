@@ -29,7 +29,7 @@ const MajorGiftForm = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.state) {
@@ -41,19 +41,49 @@ const MajorGiftForm = () => {
       return;
     }
 
-    toast({
-      title: "Form submitted successfully",
-      description: "Our philanthropy team will contact you soon."
-    });
+    try {
+      const payload = {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        emailAddress: formData.email,
+        phone: formData.phone,
+        state: formData.state,
+        message: formData.message
+      };
 
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      state: "",
-      message: ""
-    });
+      const response = await fetch("https://espocrm.theflccc.org/api/v1/LeadCapture/01c8a47a0773cb50e73bdaa59d22c646", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      toast({
+        title: "Form submitted successfully",
+        description: "Our philanthropy team will contact you soon."
+      });
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        state: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Submission failed",
+        description: "Please try again or call us directly.",
+        variant: "destructive"
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
