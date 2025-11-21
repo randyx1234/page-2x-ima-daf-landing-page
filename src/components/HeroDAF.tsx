@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-doctor-patient.jpg";
 
 const HeroDAF = () => {
   return (
-    <section className="relative min-h-[84.375vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[84.375vh] flex items-center justify-center overflow-hidden bg-white">
       <div 
         className="absolute inset-0 z-0"
         style={{
@@ -14,8 +14,8 @@ const HeroDAF = () => {
       />
       
       <div className="container relative z-10 px-6 py-20 text-center text-white">
-        <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl max-w-5xl mx-auto animate-fade-in">
-          Support Medical Freedom<br />Through Your Donor-Advised Fund
+        <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl max-w-5xl mx-auto animate-fade-in">
+          Support Medical Freedom Through Your Donor-Advised Fund
         </h1>
         
         <p className="mb-10 text-2xl md:text-3xl text-white/90 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
