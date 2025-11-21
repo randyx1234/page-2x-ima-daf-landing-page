@@ -6,7 +6,7 @@ import networkMapImage from "@/assets/network-map.png";
 
 const IMAProgramsShowcase = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-muted">
       <div className="container px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-16">
           IMA Programs Empowering Honest Medicine
