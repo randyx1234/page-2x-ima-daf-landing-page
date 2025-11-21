@@ -8,7 +8,7 @@ import HowToGive from "@/components/HowToGive";
 import GivingLevels from "@/components/GivingLevels";
 import FAQ from "@/components/FAQ";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import FinalCTA from "@/components/FinalCTA";
+
 import Footer from "@/components/Footer";
 
 const DonorAdvisedFund = () => {
@@ -24,7 +24,6 @@ const DonorAdvisedFund = () => {
       <GivingLevels />
       <FAQ />
       <TestimonialsSection />
-      <FinalCTA />
       <Footer />
     </div>
   );
