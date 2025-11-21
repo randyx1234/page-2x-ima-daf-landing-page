@@ -16,12 +16,12 @@ const CredibilitySection = () => {
     {
       icon: BookOpen,
       title: "Published Research",
-      description: "Peer-reviewed studies and treatment guides"
+      description: "Peer-reviewed research and treatment guides"
     },
     {
       icon: Handshake,
       title: "Strategic Partnerships",
-      description: "Collaborating with medical professionals nationwide"
+      description: "Partnering with medical professionals nationwide"
     }
   ];
 
