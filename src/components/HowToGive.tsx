@@ -1,15 +1,7 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import MajorGiftForm from "@/components/MajorGiftForm";
 
 const HowToGive = () => {
-  const dafInstitutions = [
-    { name: "Donors Trust", phone: "(703) 535-3563" },
-    { name: "National Philanthropic Trust", phone: "(888) 878-7900" },
-    { name: "Fidelity", phone: "(800) 262-6039" },
-    { name: "Vanguard", phone: "(888) 383-4483" },
-    { name: "Charles Schwab", phone: "(800) 746-6216" },
-    { name: "BNY Mellon", phone: "(888) 213-7605" }
-  ];
 
   return (
     <section className="py-20 bg-muted">
@@ -76,6 +68,14 @@ const HowToGive = () => {
             </div>
           </Card>
         </div>
+
+        <div className="text-center space-y-2 mb-16">
+          <p className="text-lg text-foreground font-semibold">Independent Medical Alliance, Inc.</p>
+          <p className="text-muted-foreground">IMA's EIN is 85-2270146</p>
+          <p className="text-muted-foreground">Our mailing address is: 2001 L Street NW, Suite 500 Washington, DC 20036</p>
+        </div>
+
+        <MajorGiftForm />
       </div>
     </section>
   );

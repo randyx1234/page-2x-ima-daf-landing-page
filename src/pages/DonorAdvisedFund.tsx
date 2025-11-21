@@ -2,10 +2,11 @@ import Navbar from "@/components/Navbar";
 import HeroDAF from "@/components/HeroDAF";
 import WakeUpCall from "@/components/WakeUpCall";
 import ProgramsSectionDAF from "@/components/ProgramsSectionDAF";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import HowToGive from "@/components/HowToGive";
+import IMAProgramsShowcase from "@/components/IMAProgramsShowcase";
 import CredibilitySection from "@/components/CredibilitySection";
+import HowToGive from "@/components/HowToGive";
 import FAQ from "@/components/FAQ";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
@@ -16,10 +17,11 @@ const DonorAdvisedFund = () => {
       <HeroDAF />
       <WakeUpCall />
       <ProgramsSectionDAF />
-      <TestimonialsSection />
-      <HowToGive />
+      <IMAProgramsShowcase />
       <CredibilitySection />
+      <HowToGive />
       <FAQ />
+      <TestimonialsSection />
       <FinalCTA />
       <Footer />
     </div>

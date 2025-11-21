@@ -23,7 +23,7 @@ const ProgramsSectionDAF = () => {
     },
     {
       icon: Network,
-      title: "Build the Trusted Referral Network (TRN)",
+      title: "Build the Trusted Referral Network",
       items: [
         "Grow a nationwide network of vetted physicians",
         "Give patients access to Honest Medicine clinicians"
