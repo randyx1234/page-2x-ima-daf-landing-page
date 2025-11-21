@@ -5,6 +5,7 @@ import ProgramsSectionDAF from "@/components/ProgramsSectionDAF";
 import IMAProgramsShowcase from "@/components/IMAProgramsShowcase";
 import CredibilitySection from "@/components/CredibilitySection";
 import HowToGive from "@/components/HowToGive";
+import GivingLevels from "@/components/GivingLevels";
 import FAQ from "@/components/FAQ";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FinalCTA from "@/components/FinalCTA";
@@ -20,6 +21,7 @@ const DonorAdvisedFund = () => {
       <IMAProgramsShowcase />
       <CredibilitySection />
       <HowToGive />
+      <GivingLevels />
       <FAQ />
       <TestimonialsSection />
       <FinalCTA />

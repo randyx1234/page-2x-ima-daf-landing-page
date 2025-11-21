@@ -30,7 +30,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-muted">
       <div className="container px-6 max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-4">
           Frequently Asked Questions
