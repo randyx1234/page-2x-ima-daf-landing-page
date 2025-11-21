@@ -51,8 +51,13 @@ const IMAProgramsShowcase = () => {
               </p>
               
               <div>
-                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                  Cancer Resource Hub
+                <Button 
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground"
+                  asChild
+                >
+                  <a href="https://imahealth.org/cancer-resource-hub/" target="_blank" rel="noopener noreferrer">
+                    Cancer Resource Hub
+                  </a>
                 </Button>
               </div>
             </div>
