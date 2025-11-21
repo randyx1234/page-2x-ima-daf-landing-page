@@ -1,16 +1,70 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, Network } from "lucide-react";
-import medicalTeamImage from "@/assets/medical-team-discussion.jpg";
+import { Heart, Network, FileText, Users, BookOpen, Handshake, CheckCircle } from "lucide-react";
+import cancerCareImage from "@/assets/cancer-care-team.jpg";
 import networkMapImage from "@/assets/network-map.png";
 
 const IMAProgramsShowcase = () => {
+  const credibilityItems = [
+    {
+      icon: FileText,
+      title: "Journal of Independent Medicine",
+      description: "Publishing evidence-based research"
+    },
+    {
+      icon: Users,
+      title: "Expert Leadership",
+      description: "Founded by Dr. Kory, Dr. Marik, and leading independent physicians"
+    },
+    {
+      icon: BookOpen,
+      title: "Published Research",
+      description: "Peer-reviewed studies and treatment guides"
+    },
+    {
+      icon: Handshake,
+      title: "Strategic Partnerships",
+      description: "Collaborating with medical professionals nationwide"
+    }
+  ];
+
   return (
     <section className="py-20 bg-muted">
       <div className="container px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-12">
           IMA Programs Empowering Honest Medicine
         </h2>
+        
+        {/* 4 Icons Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          {credibilityItems.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <Card key={index} className="p-6 text-center bg-card shadow-card">
+                <div className="flex justify-center mb-4">
+                  <Icon className="w-12 h-12 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {item.description}
+                </p>
+              </Card>
+            );
+          })}
+        </div>
+
+        {/* Tax Deductible Banner */}
+        <div className="bg-accent/10 rounded-lg p-6 mb-16">
+          <div className="flex items-center justify-center gap-3">
+            <CheckCircle className="w-6 h-6 text-primary" />
+            <h3 className="text-2xl font-bold text-foreground">100% Tax Deductible</h3>
+          </div>
+          <p className="text-center text-muted-foreground mt-2">
+            Independent Medical Alliance is a registered 501(c)(3) nonprofit organization
+          </p>
+        </div>
         
         {/* Cancer Care Section */}
         <Card className="mb-12 overflow-hidden bg-card shadow-card">
@@ -36,7 +90,7 @@ const IMAProgramsShowcase = () => {
             
             <div className="h-full min-h-[400px]">
               <img 
-                src={medicalTeamImage} 
+                src={cancerCareImage} 
                 alt="Medical team collaborating on patient care"
                 className="w-full h-full object-cover"
               />
