@@ -11,7 +11,7 @@ const CredibilitySection = () => {
     {
       icon: Users,
       title: "Expert Leadership",
-      description: "Founded by Dr. Kory, Dr. Marik, and leading independent physicians"
+      description: "Founded by Dr. Marik and leading independent physicians"
     },
     {
       icon: BookOpen,
