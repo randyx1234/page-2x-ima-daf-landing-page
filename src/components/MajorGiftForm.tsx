@@ -4,8 +4,19 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+
+const US_STATES = [
+  "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
+  "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", 
+  "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", 
+  "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", 
+  "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", 
+  "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", 
+  "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", 
+  "Wisconsin", "Wyoming"
+];
 
 const MajorGiftForm = () => {
   const { toast } = useToast();
@@ -14,14 +25,14 @@ const MajorGiftForm = () => {
     lastName: "",
     email: "",
     phone: "",
+    state: "",
     message: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Basic validation
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.state) {
       toast({
         title: "Required fields missing",
         description: "Please fill in all required fields.",
@@ -35,12 +46,12 @@ const MajorGiftForm = () => {
       description: "Our philanthropy team will contact you soon."
     });
 
-    // Reset form
     setFormData({
       firstName: "",
       lastName: "",
       email: "",
       phone: "",
+      state: "",
       message: ""
     });
   };
@@ -53,35 +64,22 @@ const MajorGiftForm = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-6">
-        Considering a Major Gift?
-      </h2>
-      
-      <p className="text-xl text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
-        Our dedicated philanthropy advisors will help you structure a meaningful, tax-efficient major gift that advances medical freedom nationwide.
-      </p>
-
-      <Card className="p-8 bg-card shadow-card mb-8">
-        <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold text-foreground mb-4">
-            Call Our Major Gifts Team
+    <section className="py-16 bg-gradient-to-br from-primary to-accent">
+      <div className="container px-6 max-w-2xl mx-auto">
+        <Card className="p-8 bg-card shadow-elevated">
+          <h3 className="text-3xl font-bold text-foreground mb-4 text-center">
+            Considering a Major Gift?
           </h3>
-          <a 
-            href="tel:+12029875660"
-            className="inline-flex items-center gap-2 text-3xl font-bold text-accent hover:text-accent/80 transition-colors"
-          >
-            <Phone className="w-8 h-8" />
-            (202) 987-5660
-          </a>
-        </div>
+          
+          <p className="text-center text-muted-foreground mb-6">
+            Let's discuss how your gift can make a lasting impact. Call us at{" "}
+            <a href="tel:+12029875660" className="text-primary font-semibold hover:underline">
+              (202) 987-5660
+            </a>
+            {" "}or submit the form below.
+          </p>
 
-        <div className="text-center mb-8">
-          <p className="text-lg text-muted-foreground">Or fill out the form below:</p>
-        </div>
-
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid md:grid-cols-2 gap-6">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <Label htmlFor="firstName" className="text-foreground font-semibold">
                 First Name <span className="text-destructive">*</span>
@@ -92,10 +90,10 @@ const MajorGiftForm = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 required
-                className="mt-2"
+                className="mt-1.5"
               />
             </div>
-
+            
             <div>
               <Label htmlFor="lastName" className="text-foreground font-semibold">
                 Last Name <span className="text-destructive">*</span>
@@ -106,69 +104,90 @@ const MajorGiftForm = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 required
-                className="mt-2"
+                className="mt-1.5"
               />
             </div>
-          </div>
 
-          <div>
-            <Label htmlFor="email" className="text-foreground font-semibold">
-              Email Address <span className="text-destructive">*</span>
-            </Label>
-            <Input
-              id="email"
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="mt-2"
-            />
-          </div>
+            <div>
+              <Label htmlFor="email" className="text-foreground font-semibold">
+                Email Address <span className="text-destructive">*</span>
+              </Label>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="mt-1.5"
+              />
+            </div>
+            
+            <div>
+              <Label htmlFor="phone" className="text-foreground font-semibold">
+                Phone Number <span className="text-destructive">*</span>
+              </Label>
+              <Input
+                id="phone"
+                name="phone"
+                type="tel"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="mt-1.5"
+              />
+            </div>
 
-          <div>
-            <Label htmlFor="phone" className="text-foreground font-semibold">
-              Phone Number <span className="text-destructive">*</span>
-            </Label>
-            <Input
-              id="phone"
-              name="phone"
-              type="tel"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-              className="mt-2"
-            />
-          </div>
+            <div>
+              <Label htmlFor="state" className="text-foreground font-semibold">
+                State <span className="text-destructive">*</span>
+              </Label>
+              <Select
+                value={formData.state}
+                onValueChange={(value) => setFormData({ ...formData, state: value })}
+              >
+                <SelectTrigger className="mt-1.5">
+                  <SelectValue placeholder="Select your state" />
+                </SelectTrigger>
+                <SelectContent>
+                  {US_STATES.map((state) => (
+                    <SelectItem key={state} value={state}>
+                      {state}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
 
-          <div>
-            <Label htmlFor="message" className="text-foreground font-semibold">
-              Message (Optional)
-            </Label>
-            <Textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Tell us about your philanthropic interests..."
-              rows={5}
-              className="mt-2"
-            />
-          </div>
+            <div>
+              <Label htmlFor="message" className="text-foreground font-semibold">
+                Message (Optional)
+              </Label>
+              <Textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Tell us about your philanthropic interests..."
+                rows={3}
+                className="mt-1.5"
+              />
+            </div>
 
-          <Button 
-            type="submit" 
-            className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg py-6"
-          >
-            Submit
-          </Button>
+            <Button 
+              type="submit" 
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+            >
+              Submit Inquiry
+            </Button>
 
-          <p className="text-center text-sm text-muted-foreground">
-            Your information is protected and will only be used to discuss major gift opportunities.
-          </p>
-        </form>
-      </Card>
-    </div>
+            <p className="text-center text-sm text-muted-foreground pt-2">
+              Your information is protected and will only be used to discuss major gift opportunities.
+            </p>
+          </form>
+        </Card>
+      </div>
+    </section>
   );
 };
 
