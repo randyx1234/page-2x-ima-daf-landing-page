@@ -64,7 +64,7 @@ const MajorGiftForm = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-primary to-accent">
+    <section id="major-gift-form" className="py-16 bg-gradient-to-br from-primary to-accent scroll-mt-16">
       <div className="px-6 max-w-2xl mx-auto">
         <Card className="p-8 bg-card shadow-elevated">
           <h3 className="text-3xl font-bold text-foreground mb-4 text-center">
