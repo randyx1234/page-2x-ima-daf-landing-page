@@ -27,39 +27,8 @@ const IMAProgramsShowcase = () => {
     <section className="py-20 bg-muted">
       <div className="container px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-16">
-          IMA Programs Empowering Honest Medicine
+          Spotlight IMA Programs
         </h2>
-        
-        {/* 4 Program Boxes */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
-            <h3 className="text-xl font-bold text-foreground mb-4">COVID</h3>
-            <p className="text-muted-foreground">
-              Evidence-based treatment guides and resources for COVID-19 management and recovery.
-            </p>
-          </Card>
-
-          <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
-            <h3 className="text-xl font-bold text-foreground mb-4">Vaccine Injury</h3>
-            <p className="text-muted-foreground">
-              Support and treatment guidance for individuals experiencing vaccine-related adverse events.
-            </p>
-          </Card>
-
-          <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
-            <h3 className="text-xl font-bold text-foreground mb-4">Insulin Resistance</h3>
-            <p className="text-muted-foreground">
-              Comprehensive metabolic health protocols and dietary guidance for managing insulin resistance.
-            </p>
-          </Card>
-
-          <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
-            <h3 className="text-xl font-bold text-foreground mb-4">Brain Health</h3>
-            <p className="text-muted-foreground">
-              Cognitive wellness strategies and neuroprotective approaches for optimal brain function.
-            </p>
-          </Card>
-        </div>
         
         {/* Cancer Care Section */}
         <Card className="mb-12 overflow-hidden bg-card shadow-card">
@@ -138,7 +107,46 @@ const IMAProgramsShowcase = () => {
           </div>
         </Card>
 
-        {/* 3 Icons Grid */}
+        {/* Additional Areas of Focus */}
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12 mt-16">
+          Additional Areas of Focus
+        </h2>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
+            <h3 className="text-xl font-bold text-foreground mb-4">COVID</h3>
+            <p className="text-muted-foreground">
+              Evidence-based treatment guides and resources for COVID-19 management and recovery.
+            </p>
+          </Card>
+
+          <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
+            <h3 className="text-xl font-bold text-foreground mb-4">Vaccine Injury</h3>
+            <p className="text-muted-foreground">
+              Support and treatment guidance for individuals experiencing vaccine-related adverse events.
+            </p>
+          </Card>
+
+          <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
+            <h3 className="text-xl font-bold text-foreground mb-4">Insulin Resistance</h3>
+            <p className="text-muted-foreground">
+              Comprehensive metabolic health protocols and dietary guidance for managing insulin resistance.
+            </p>
+          </Card>
+
+          <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
+            <h3 className="text-xl font-bold text-foreground mb-4">Brain Health</h3>
+            <p className="text-muted-foreground">
+              Cognitive wellness strategies and neuroprotective approaches for optimal brain function.
+            </p>
+          </Card>
+        </div>
+
+        {/* Organizational Pillars */}
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
+          Organizational Pillars
+        </h2>
+        
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {credibilityItems.map((item, index) => {
             const Icon = item.icon;
