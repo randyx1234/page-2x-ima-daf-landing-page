@@ -102,7 +102,7 @@ const MajorGiftForm = () => {
           </h3>
           
           <p className="text-center text-muted-foreground mb-6">
-            Let's discuss how your gift can make a lasting impact. Call us at{" "}
+            Let's discuss how your gift can make a lasting impact.<br />Call us at{" "}
             <a href="tel:+12029875660" className="text-primary font-semibold hover:underline">
               (202) 987-5660
             </a>
