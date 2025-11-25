@@ -50,7 +50,7 @@ const StrategicCase = () => {
                   <div className="flex-shrink-0 w-14 h-14 rounded-lg bg-destructive/10 flex items-center justify-center">
                     <Icon className="w-7 h-7 text-destructive" />
                   </div>
-                  <p className="text-base text-foreground leading-relaxed">{point.text}</p>
+                  <p className="text-lg text-foreground leading-relaxed">{point.text}</p>
                 </div>
               </Card>
             );
@@ -79,7 +79,7 @@ const StrategicCase = () => {
                   Redefining Cancer Care Through Prevention and Education
                 </p>
                 <div className="space-y-3">
-                  <p className="text-base text-foreground">IMA's Cancer Care initiative includes:</p>
+                  <p className="text-lg text-foreground">IMA's Cancer Care initiative includes:</p>
                   <ul className="space-y-2 text-foreground">
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
@@ -129,10 +129,10 @@ const StrategicCase = () => {
                 <p className="text-xl text-foreground font-bold">
                   Connecting patients with doctors who still listen.
                 </p>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   IMA's Trusted Referral Network links patients to independent physicians who practice Honest Medicine™ across the U.S.
                 </p>
-                <p className="text-base text-foreground">
+                <p className="text-lg text-foreground">
                   Every DAF gift helps us expand this life-changing resource — one that puts the patient back at the center of care.
                 </p>
                 <Button className="bg-accent hover:bg-accent/90 text-accent-foreground mt-4">
