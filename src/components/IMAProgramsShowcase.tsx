@@ -7,24 +7,19 @@ import networkMapImage from "@/assets/network-map.png";
 const IMAProgramsShowcase = () => {
   const credibilityItems = [
     {
-      icon: FileText,
-      title: "Journal of Independent Medicine",
-      description: "Publishing evidence-based research"
-    },
-    {
       icon: Users,
       title: "Expert Leadership",
-      description: "Founded by Dr. Joseph Varon, President and CMO and Dr. Paul Marik, CSO"
+      description: "Founded by Dr Joseph Varon, President and CMO, and Paul Marik, CSO"
     },
     {
       icon: BookOpen,
-      title: "Published Research",
-      description: "Peer-reviewed research and treatment guides"
+      title: "Education & Treatment",
+      description: "Evidence-based and peer-reviewed research and treatment guides"
     },
     {
       icon: Handshake,
-      title: "Strategic Partnerships",
-      description: "Partnering with medical professionals nationwide"
+      title: "Strategic Alliances",
+      description: "Partnering with more than 12,000 medical professionals across 15 countries and 34 medical specialties"
     }
   ];
 
@@ -143,8 +138,8 @@ const IMAProgramsShowcase = () => {
           </div>
         </Card>
 
-        {/* 4 Icons Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        {/* 3 Icons Grid */}
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           {credibilityItems.map((item, index) => {
             const Icon = item.icon;
             return (
