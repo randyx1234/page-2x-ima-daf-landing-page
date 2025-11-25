@@ -19,11 +19,11 @@ const HeroDAF = () => {
         </h1>
         
         <p className="mb-10 text-2xl md:text-3xl text-white/90 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Your DAF gift empowers independent physicians and restores patient-first healthcare in America.
+          The Independent Medical Alliance empowers independent physicians and restores patient-first healthcare in America.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 shadow-elevated">
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 shadow-elevated">
             Give Through Your DAF
           </Button>
           <Button 

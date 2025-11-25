@@ -15,18 +15,18 @@ const Hero = () => {
       
       <div className="container relative z-10 px-6 py-20 text-center text-white">
         <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl max-w-5xl mx-auto animate-fade-in">
-          Support Honest Medicine<sup className="text-lg font-normal relative -top-6 ml-0.5">™</sup><br />Through Your Donor-Advised Fund
+          Support Honest Medicin<sup className="text-lg font-normal relative -top-6">e™</sup><br />Through Your Donor-Advised Fund
         </h1>
         
         <p className="mb-10 text-2xl md:text-3xl text-white/90 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Your DAF gift empowers independent physicians and restores patient-first healthcare in America.
+          The Independent Medical Alliance empowers independent physicians and restores patient-first healthcare in America.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 shadow-elevated">
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 shadow-elevated">
             Give Through Your DAF
           </Button>
-          <Button size="lg" variant="ghost" className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6">
+          <Button size="lg" variant="ghost" className="border-2 border-white text-white hover:bg-white hover:text-accent text-lg px-8 py-6">
             Learn How DAF Giving Works
           </Button>
         </div>

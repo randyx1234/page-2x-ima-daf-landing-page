@@ -4,31 +4,26 @@ import { FileText, Users, BookOpen, Handshake, CheckCircle } from "lucide-react"
 const CredibilitySection = () => {
   const credentials = [
     {
-      icon: FileText,
-      title: "Journal of Independent Medicine",
-      description: "Publishing evidence-based research"
-    },
-    {
       icon: Users,
       title: "Expert Leadership",
-      description: "Founded by Dr. Marik and leading independent physicians"
+      description: "Founded by Dr Joseph Varon (pres & CMO) and Paul Marik (CSO)"
     },
     {
       icon: BookOpen,
-      title: "Published Research",
-      description: "Peer-reviewed research and treatment guides"
+      title: "Education & Treatment",
+      description: "Evidence-based and peer-reviewed research and treatment guides"
     },
     {
       icon: Handshake,
-      title: "Strategic Partnerships",
-      description: "Partnering with medical professionals nationwide"
+      title: "Strategic Alliances",
+      description: "Partnering with more than 12,000 medical professionals across 15 countries and 34 medical specialties"
     }
   ];
 
   return (
     <section className="py-20 bg-background">
       <div className="container px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {credentials.map((item, index) => {
             const Icon = item.icon;
             return (
