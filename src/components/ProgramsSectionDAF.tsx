@@ -35,7 +35,7 @@ const ProgramsSectionDAF = () => {
     <section className="py-20 bg-background">
       <div className="container px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-16">
-          IMA's Approach: Honest Medicine<sup className="text-lg font-normal relative -top-2">™</sup>
+          IMA's Approach: Honest Medicine<sup className="text-lg font-normal relative -top-3">™</sup>
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
