@@ -1,28 +1,27 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-doctor-patient.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-[65.8125vh] flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+  return <section className="relative min-h-[65.8125vh] flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 z-0" style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(${heroImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }} />
       
       <div className="container relative z-10 px-6 py-20 text-center text-white">
-        <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl max-w-5xl mx-auto animate-fade-in">
-          Support Honest Medicin<sup className="text-lg font-normal relative -top-6">e™</sup><br />Through Your Donor-Advised Fund
+        <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl lg:text-7xl max-w-5xl mx-auto animate-fade-in">Support Honest Medicinene™
+Through Your Donor-Advised Fund<sup className="text-lg font-normal relative -top-6">e™</sup><br />Through Your Donor-Advised Fund
         </h1>
         
-        <p className="mb-10 text-2xl md:text-3xl text-white/90 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <p className="mb-10 text-2xl md:text-3xl text-white/90 max-w-3xl mx-auto animate-fade-in" style={{
+        animationDelay: '0.2s'
+      }}>
           The Independent Medical Alliance empowers independent physicians and restores patient-first healthcare in America.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{
+        animationDelay: '0.4s'
+      }}>
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 shadow-elevated">
             Give Through Your DAF
           </Button>
@@ -31,8 +30,6 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
