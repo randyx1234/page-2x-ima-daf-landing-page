@@ -110,7 +110,7 @@ const StrategicCase = () => {
           </Card>
 
           {/* Trusted Network */}
-          <Card className="overflow-hidden border-2 border-accent/20 hover:shadow-elevated transition-all duration-300">
+          <Card className="overflow-hidden border-2 border-accent/20 hover:shadow-elevated transition-all duration-300 mb-16">
             <div className="grid md:grid-cols-2 gap-8 p-8">
               <div className="flex items-center justify-center order-2 md:order-1">
                 <img 
