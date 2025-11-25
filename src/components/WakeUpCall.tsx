@@ -35,9 +35,9 @@ const WakeUpCall = () => {
               const isLastCard = index === problems.length - 1;
               
               return (
-                <div key={index} className="relative">
+                <div key={index} className="relative flex flex-col">
                   <Card 
-                    className="p-8 bg-card flex flex-col items-center text-center gap-6 hover:shadow-card transition-all duration-300 animate-fade-in"
+                    className="p-8 bg-card flex flex-col items-center text-center gap-6 hover:shadow-card transition-all duration-300 animate-fade-in h-full"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center">
