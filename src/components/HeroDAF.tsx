@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-doctor-patient.jpg";
 
 const HeroDAF = () => {
   return (
-    <section className="relative min-h-[109.6875vh] flex items-center justify-center overflow-hidden bg-white">
+    <section className="relative min-h-[65.8125vh] flex items-center justify-center overflow-hidden bg-white">
       <div 
         className="absolute inset-0 z-0"
         style={{
