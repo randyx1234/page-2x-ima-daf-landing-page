@@ -5,11 +5,11 @@ const WakeUpCall = () => {
   const problems = [
     {
       icon: DollarSign,
-      text: "Corporate interests drive treatment protocols"
+      text: "Corporate interest drives standardized treatment protocols"
     },
     {
       icon: AlertCircle,
-      text: "Pharmaceutical influence shapes public messaging"
+      text: "Pharmaceutical money distorts medical truth"
     },
     {
       icon: UserX,
