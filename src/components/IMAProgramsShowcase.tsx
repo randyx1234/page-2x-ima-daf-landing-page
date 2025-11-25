@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, Network, FileText, Users, BookOpen, Handshake, CheckCircle } from "lucide-react";
+import { Heart, Network, FileText, Users, BookOpen, Handshake, CheckCircle, Stethoscope, Syringe, Activity, Brain } from "lucide-react";
 import cancerCareImage from "@/assets/cancer-care-team.jpg";
 import networkMapImage from "@/assets/network-map.png";
 
@@ -114,28 +114,48 @@ const IMAProgramsShowcase = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
-            <h3 className="text-xl font-bold text-foreground mb-4">COVID</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 rounded-lg bg-accent/10">
+                <Stethoscope className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground">COVID</h3>
+            </div>
             <p className="text-muted-foreground">
               Evidence-based treatment guides and resources for COVID-19 management and recovery.
             </p>
           </Card>
 
           <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
-            <h3 className="text-xl font-bold text-foreground mb-4">Vaccine Injury</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 rounded-lg bg-accent/10">
+                <Syringe className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground">Vaccine Injury</h3>
+            </div>
             <p className="text-muted-foreground">
               Support and treatment guidance for individuals experiencing vaccine-related adverse events.
             </p>
           </Card>
 
           <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
-            <h3 className="text-xl font-bold text-foreground mb-4">Insulin Resistance</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 rounded-lg bg-accent/10">
+                <Activity className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground">Insulin Resistance</h3>
+            </div>
             <p className="text-muted-foreground">
               Comprehensive metabolic health protocols and dietary guidance for managing insulin resistance.
             </p>
           </Card>
 
           <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
-            <h3 className="text-xl font-bold text-foreground mb-4">Brain Health</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 rounded-lg bg-accent/10">
+                <Brain className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground">Brain Health</h3>
+            </div>
             <p className="text-muted-foreground">
               Cognitive wellness strategies and neuroprotective approaches for optimal brain function.
             </p>
