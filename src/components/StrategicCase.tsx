@@ -59,7 +59,7 @@ const StrategicCase = () => {
 
         <div className="text-center p-8 rounded-lg bg-accent/10 border border-accent/20 mb-16">
           <p className="text-2xl text-foreground font-semibold">
-            Your DAF gift creates change where it's needed most.
+            Your DAF gift creates change where it's needed most
           </p>
         </div>
 
@@ -127,7 +127,7 @@ const StrategicCase = () => {
                   <h3 className="text-3xl font-bold text-foreground">Trusted Referral Network</h3>
                 </div>
                 <p className="text-xl text-foreground font-bold">
-                  Connecting patients with doctors who still listen.
+                  Connecting patients with doctors who still listen
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   IMA's Trusted Referral Network links patients to independent physicians who practice Honest Medicine™ across the U.S.

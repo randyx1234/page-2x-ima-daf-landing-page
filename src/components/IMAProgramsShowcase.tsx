@@ -92,7 +92,7 @@ const IMAProgramsShowcase = () => {
               </div>
               
               <h4 className="text-xl font-semibold text-foreground mb-4">
-                Connecting patients with doctors who still listen.
+                Connecting patients with doctors who still listen
               </h4>
               
               <p className="text-lg text-muted-foreground mb-6">
