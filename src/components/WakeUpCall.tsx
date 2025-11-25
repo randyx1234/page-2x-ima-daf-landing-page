@@ -36,7 +36,7 @@ const WakeUpCall = () => {
               
               return (
                 <div key={index} className="relative flex flex-col">
-                  <Card className="p-8 bg-card flex flex-col items-center text-center gap-6 h-full animate-fade-in">
+                  <Card className={`p-8 bg-card flex flex-col items-center text-center gap-6 animate-fade-in ${isLastCard ? 'h-full' : ''}`}>
                     <Icon className="w-20 h-20 text-destructive" strokeWidth={1.5} />
                     <p className="text-lg text-foreground leading-relaxed">
                       {problem.text}
