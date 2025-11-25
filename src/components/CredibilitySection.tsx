@@ -6,7 +6,7 @@ const CredibilitySection = () => {
     {
       icon: Users,
       title: "Expert Leadership",
-      description: "Founded by Dr Joseph Varon (pres & CMO) and Paul Marik (CSO)"
+      description: "Founded by Dr Joseph Varon, President and CMO, and Paul Marik, CSO"
     },
     {
       icon: BookOpen,
