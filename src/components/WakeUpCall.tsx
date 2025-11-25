@@ -1,5 +1,4 @@
 import { DollarSign, AlertCircle, UserX, TrendingDown } from "lucide-react";
-import { Card } from "@/components/ui/card";
 
 const WakeUpCall = () => {
   const problems = [
@@ -36,17 +35,15 @@ const WakeUpCall = () => {
               
               return (
                 <div key={index} className="relative flex flex-col">
-                  <Card 
-                    className="p-8 bg-card flex flex-col items-center text-center gap-6 hover:shadow-card transition-all duration-300 animate-fade-in h-full"
+                  <div 
+                    className="p-8 flex flex-col items-center text-center gap-6 h-full animate-fade-in"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center">
-                      <Icon className="w-10 h-10 text-destructive" />
-                    </div>
+                    <Icon className="w-20 h-20 text-destructive" strokeWidth={1.5} />
                     <p className="text-lg text-foreground leading-relaxed">
                       {problem.text}
                     </p>
-                  </Card>
+                  </div>
                   
                   {isLastCard && (
                     <div className="flex flex-col items-center mt-4">
