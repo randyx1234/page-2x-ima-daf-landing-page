@@ -8,7 +8,7 @@ const WakeUpCall = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
             Trust in Doctors Has Dropped
           </h2>
-          <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-accent mb-16">
+          <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-16">
             45% Since COVID
           </p>
           
