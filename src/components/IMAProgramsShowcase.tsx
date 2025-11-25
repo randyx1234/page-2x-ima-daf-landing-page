@@ -14,7 +14,7 @@ const IMAProgramsShowcase = () => {
     {
       icon: Users,
       title: "Expert Leadership",
-      description: "Founded by Dr. Marik and leading independent physicians"
+      description: "Founded by Dr. Joseph Varon, President and CMO and Dr. Paul Marik, CSO"
     },
     {
       icon: BookOpen,
