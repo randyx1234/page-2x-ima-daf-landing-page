@@ -46,7 +46,7 @@ const GivingLevels = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6">
             Choose Your Impact Level
           </Button>
         </div>
