@@ -112,6 +112,43 @@ const IMAProgramsShowcase = () => {
           </div>
         </Card>
 
+        {/* Additional IMA Programs */}
+        <div className="mb-16">
+          <h2 className="text-4xl font-bold text-center text-foreground mb-12">
+            Additional IMA Programs
+          </h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
+              <h3 className="text-xl font-bold text-foreground mb-4">COVID</h3>
+              <p className="text-muted-foreground">
+                Evidence-based treatment guides and resources for COVID-19 management and recovery.
+              </p>
+            </Card>
+
+            <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
+              <h3 className="text-xl font-bold text-foreground mb-4">Vaccine Injury</h3>
+              <p className="text-muted-foreground">
+                Support and treatment guidance for individuals experiencing vaccine-related adverse events.
+              </p>
+            </Card>
+
+            <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
+              <h3 className="text-xl font-bold text-foreground mb-4">Insulin Resistance</h3>
+              <p className="text-muted-foreground">
+                Comprehensive metabolic health protocols and dietary guidance for managing insulin resistance.
+              </p>
+            </Card>
+
+            <Card className="p-6 bg-card shadow-card hover:shadow-elevated transition-all duration-300">
+              <h3 className="text-xl font-bold text-foreground mb-4">Brain Health</h3>
+              <p className="text-muted-foreground">
+                Cognitive wellness strategies and neuroprotective approaches for optimal brain function.
+              </p>
+            </Card>
+          </div>
+        </div>
+
         {/* 4 Icons Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {credibilityItems.map((item, index) => {
