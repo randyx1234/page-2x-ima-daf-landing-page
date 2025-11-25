@@ -1,45 +1,38 @@
-import { Card } from "@/components/ui/card";
-import { DollarSign, AlertCircle, UserX } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const WakeUpCall = () => {
-  const issues = [
-    {
-      icon: DollarSign,
-      description: "Corporate interests drive treatment protocols"
-    },
-    {
-      icon: AlertCircle,
-      description: "Pharmaceutical influence shapes public messaging"
-    },
-    {
-      icon: UserX,
-      description: "Patients feel unheard—and trust has collapsed"
-    }
-  ];
-
   return (
     <section className="py-20 bg-muted">
       <div className="container px-6">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Corporate Medicine is Collapsing
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
+            Trust in Doctors Has Dropped
           </h2>
-        </div>
-        
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {issues.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <Card key={index} className="p-8 text-center bg-card shadow-card hover:shadow-elevated transition-all duration-300">
-                <div className="flex justify-center mb-6">
-                  <Icon className="w-12 h-12 text-destructive" strokeWidth={2} />
-                </div>
-                <p className="text-foreground text-lg">
-                  {item.description}
-                </p>
-              </Card>
-            );
-          })}
+          <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-accent mb-16">
+            45% Since COVID
+          </p>
+          
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 max-w-3xl mx-auto">
+            <div className="text-center">
+              <div className="text-6xl md:text-7xl lg:text-8xl font-bold text-primary mb-4">
+                71.5%
+              </div>
+              <p className="text-xl md:text-2xl text-muted-foreground">
+                2020
+              </p>
+            </div>
+            
+            <ArrowRight className="w-12 h-12 text-muted-foreground rotate-90 md:rotate-0" />
+            
+            <div className="text-center">
+              <div className="text-6xl md:text-7xl lg:text-8xl font-bold text-primary mb-4">
+                40.1%
+              </div>
+              <p className="text-xl md:text-2xl text-muted-foreground">
+                Today
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
