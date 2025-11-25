@@ -29,33 +29,48 @@ const WakeUpCall = () => {
             Corporate Medicine is Collapsing
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {problems.map((problem, index) => {
               const Icon = problem.icon;
+              const isLastCard = index === problems.length - 1;
+              
               return (
-                <Card 
-                  key={index}
-                  className="p-8 bg-card flex flex-col items-center text-center gap-6 hover:shadow-card transition-all duration-300 animate-fade-in"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center">
-                    <Icon className="w-10 h-10 text-destructive" />
-                  </div>
-                  <p className="text-lg text-foreground leading-relaxed">
-                    {problem.text}
-                  </p>
-                </Card>
+                <div key={index} className="relative">
+                  <Card 
+                    className="p-8 bg-card flex flex-col items-center text-center gap-6 hover:shadow-card transition-all duration-300 animate-fade-in"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center">
+                      <Icon className="w-10 h-10 text-destructive" />
+                    </div>
+                    <p className="text-lg text-foreground leading-relaxed">
+                      {problem.text}
+                    </p>
+                  </Card>
+                  
+                  {isLastCard && (
+                    <div className="flex flex-col items-center mt-4">
+                      <svg 
+                        className="w-full h-12" 
+                        viewBox="0 0 200 48" 
+                        preserveAspectRatio="none"
+                      >
+                        <path 
+                          d="M 10 0 L 10 24 L 190 24 L 190 0" 
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          fill="none"
+                          className="text-destructive"
+                        />
+                      </svg>
+                      <p className="text-xl font-bold text-destructive mt-2">
+                        Outcome
+                      </p>
+                    </div>
+                  )}
+                </div>
               );
             })}
-          </div>
-
-          <div className="flex justify-end items-center gap-4 max-w-7xl mx-auto">
-            <div className="w-full lg:w-1/4 h-0.5 bg-destructive"></div>
-            <div className="flex-shrink-0 px-6 py-3 bg-destructive/10 border-2 border-destructive rounded-lg">
-              <p className="text-xl font-bold text-destructive whitespace-nowrap">
-                Outcome
-              </p>
-            </div>
           </div>
         </div>
       </div>
