@@ -67,7 +67,7 @@ const ProgramsSectionDAF = () => {
         </div>
         
         <div className="text-center">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6">
             Support These Programs With Your DAF
           </Button>
         </div>
