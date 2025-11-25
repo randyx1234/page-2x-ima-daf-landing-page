@@ -14,7 +14,7 @@ const WakeUpCall = () => {
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4">
+              <div className="text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4">
                 71.5%
               </div>
               <p className="text-xl md:text-2xl text-muted-foreground">
@@ -25,7 +25,7 @@ const WakeUpCall = () => {
             <ArrowRight className="w-12 h-12 text-muted-foreground rotate-90 md:rotate-0" />
             
             <div className="text-center">
-              <div className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-4">
+              <div className="text-6xl md:text-7xl lg:text-8xl font-bold text-primary mb-4">
                 40.1%
               </div>
               <p className="text-xl md:text-2xl text-muted-foreground">
