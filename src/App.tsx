@@ -17,7 +17,6 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<DonorAdvisedFund />} />
-          <Route path="/original" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
