@@ -5,17 +5,17 @@ const GivingLevels = () => {
   const levels = [
     {
       amount: "$5,000",
-      impact: "Funds development of one treatment guide",
+      impact: "Supports 25 new physicians joining network",
       color: "border-t-accent"
     },
     {
       amount: "$10,000",
-      impact: "Supports 3 physicians joining TRN",
+      impact: "Funds development of one treatment guide",
       color: "border-t-primary"
     },
     {
       amount: "$25,000",
-      impact: "Funds a major research initiative",
+      impact: "Funds research reviews and publication",
       color: "border-t-accent"
     },
     {
