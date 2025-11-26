@@ -145,7 +145,7 @@ const IMAProgramsShowcase = () => {
               <h3 className="text-xl font-bold text-foreground">Insulin Resistance</h3>
             </div>
             <p className="text-muted-foreground">
-              Comprehensive guide to metabolic health -- high blood pressure and Type II Diabetes.
+              Comprehensive guide to metabolic health — high blood pressure and Type II Diabetes.
             </p>
           </Card>
 
