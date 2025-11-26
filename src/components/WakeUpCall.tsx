@@ -13,7 +13,7 @@ const WakeUpCall = () => {
     },
     {
       icon: UserX,
-      text: "Patients feel unheard—and trust has collapsed"
+      text: "Patients feel unheard and trust has collapsed"
     },
     {
       icon: TrendingDown,
