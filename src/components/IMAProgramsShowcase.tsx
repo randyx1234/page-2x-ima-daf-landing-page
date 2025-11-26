@@ -145,7 +145,7 @@ const IMAProgramsShowcase = () => {
               <h3 className="text-xl font-bold text-foreground">Insulin Resistance</h3>
             </div>
             <p className="text-muted-foreground">
-              Comprehensive metabolic health protocols and dietary guidance for managing insulin resistance.
+              Comprehensive guide to metabolic health -- high blood pressure and Type II Diabetes.
             </p>
           </Card>
 
@@ -157,7 +157,7 @@ const IMAProgramsShowcase = () => {
               <h3 className="text-xl font-bold text-foreground">Brain Health</h3>
             </div>
             <p className="text-muted-foreground">
-              Cognitive wellness strategies and neuroprotective approaches for optimal brain function.
+              Proactive and restorative brain-health strategies for both prevention and cognitive impairment.
             </p>
           </Card>
         </div>
