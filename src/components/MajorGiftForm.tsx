@@ -101,6 +101,10 @@ const MajorGiftForm = () => {
             Considering a Major Gift?
           </h3>
           
+          <p className="text-center text-foreground mb-2">
+            A major gift is $1,000 or more.
+          </p>
+          
           <p className="text-center text-muted-foreground mb-6">
             Let's discuss how your gift can make a lasting impact.<br />Call us at{" "}
             <a href="tel:+12029875660" className="text-primary font-semibold hover:underline">
