@@ -20,7 +20,7 @@ const GivingLevels = () => {
     },
     {
       amount: "$50,000+",
-      impact: "Underwrites a Journal of Independent Medicine volume",
+      impact: "Underwrites one edition of the Journal of Independent Medicine volume",
       color: "border-t-primary"
     }
   ];
