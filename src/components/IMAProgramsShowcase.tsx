@@ -42,7 +42,7 @@ const IMAProgramsShowcase = () => {
               </div>
               
               <p className="text-lg text-muted-foreground mb-8">
-                The IMA Cancer Resource Hub offers clinician-developed treatment guides, patient education, community support and more, freely accessible to patients and healthcare professionals.
+                The IMA Cancer Resource Hub offers latest research reviews, treatment guides, patient education, community support and more, freely accessible to patients and healthcare professionals.
               </p>
               
               <div>
