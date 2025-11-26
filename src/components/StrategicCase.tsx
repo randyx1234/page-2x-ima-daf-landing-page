@@ -78,23 +78,9 @@ const StrategicCase = () => {
                 <p className="text-xl text-foreground font-bold">
                   Redefining Cancer Care Through Prevention and Education
                 </p>
-                <div className="space-y-3">
-                  <p className="text-lg text-foreground">IMA's Cancer Care initiative includes:</p>
-                  <ul className="space-y-2 text-foreground">
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">•</span>
-                      <span>Clinician-developed treatment guides and patient education series</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">•</span>
-                      <span>Six-part Cancer Care program supported by a $250,000 match campaign</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">•</span>
-                      <span>A focus on nutrition, metabolic health, and whole-body care</span>
-                    </li>
-                  </ul>
-                </div>
+                <p className="text-lg text-foreground leading-relaxed">
+                  The IMA Cancer Resource Hub offers latest research reviews, treatment guides, patient education, community support and more, freely accessible to patients and healthcare professionals.
+                </p>
                 <Button className="bg-accent hover:bg-accent/90 text-accent-foreground mt-4">
                   Fund Cancer Solutions
                 </Button>
